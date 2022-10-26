@@ -33,7 +33,7 @@ const app = {
         {
             name: '白月光与朱砂痣',
             author: 'Đại Tử',
-            image: './img/AcMa.jfif',
+            image: './image/Suzy2.jpg',
             path: './music/BachNguyetQuangVaNotChuSa.mp3'
         },
         {
