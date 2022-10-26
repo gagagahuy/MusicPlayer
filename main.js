@@ -61,7 +61,7 @@ const app = {
             path: './music/TheNight.mp3'
         },
         {
-            name: 'Theres-No-One-At-All-Son-Tung-M-TP',
+            name: 'Theres-No-One-At-All',
             author: 'Sơn Tùng MTP',
             image: './img/son-tung-m-tp.jpg ',
             path: './music/Theres-No-One-At-All-Son-Tung-M-TP.mp3'
@@ -144,7 +144,7 @@ const app = {
                 audio.volume = 0;
                 volumeBar.value = 0;
             }
-            else {
+            else { 
                 audio.volume = _this.currentVolume;
                 volumeBar.value = _this.currentVolume * 100;
             }
@@ -241,6 +241,7 @@ const app = {
                 audio.volume = 0;
             }
             else {
+                _this.isMute = false
                 volumeBar.value = _this.currentVolume * 100;
                 audio.volume = _this.currentVolume;
             }
@@ -317,6 +318,7 @@ const app = {
         this.currentIndex = newIndex
         this.loadCurrentSong();
     },
+    // when browser closed
     star: function () {
         //Cấu hình từ config vào ứng dụng
         this.loadConfig();
